@@ -37,6 +37,4 @@ px4_add_library(Takeoff
 target_include_directories(Takeoff PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 target_link_libraries(Takeoff PUBLIC hysteresis)
 
-px4_add_unit_gtest(SRC TakeoffTest.cpp LINKLIBS Takeoff)
-px4_add_unit_gtest(SRC Beagle_TakeoffTest.cpp LINKLIBS Takeoff)
-
+px4_add_unit_gtest(SRC landing_takeoffTest.cpp LINKLIBS landing_takeoff)
